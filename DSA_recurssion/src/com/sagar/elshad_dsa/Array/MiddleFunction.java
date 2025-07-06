@@ -6,10 +6,12 @@ public class MiddleFunction {
 
 	 public static int[] middleFunction(int [] arr) {
 		 int index=1;
+		 if(arr.length <=2) return new int[0];
 		 int [] myArray=new int[arr.length-2];
 		 
 		 while(index < arr.length-1) {
 			 myArray[index-1]=arr[index];
+			 index++;
 		 }
 		 return myArray;
 	 }
